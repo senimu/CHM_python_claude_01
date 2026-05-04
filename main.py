@@ -21,6 +21,7 @@ def read_root():
 
 # id in the path
 @app.get("/users/{user_id}")
+# Returns a JSON object containing the user_id provided in the URL path.
 def find_one(user_id: int):
     return {"user_id": user_id}
 
